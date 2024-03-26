@@ -1,0 +1,254 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(231, 231, 231);
+    font-family: Arial, sans-serif; 
+}
+
+.loginContainer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item1 {
+    position: absolute;
+    top: 29%;
+    left: 0%;
+}
+.item2 {
+    position: absolute;
+    top: 0%;
+    left: 75%;
+}
+.item3 {
+    position: absolute;
+    top: 90%;
+    left: 76%;
+}
+
+.loginForm {
+    width: 1024px;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1), 0 8px 20px rgba(0, 0, 0, .1);
+    border-radius: 30px;
+    display: flex;
+}
+.imageLoginForm {
+    position: relative;
+    border-radius: 30px;
+    width: 510px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imageLoginForm .imgBack {
+    border-radius: 30px;
+    opacity: 0.25;
+}
+.layoutLogin {
+    position: absolute;
+    width: 99%;
+    height: 100%;
+    background-color: rgba(148, 171, 192, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 30px;
+}
+
+.item4 {
+    position: absolute;
+    top: 66%;
+    left: 0%;
+    z-index: 2;
+    opacity: 1;
+}
+.item5 {
+    position: absolute;
+    top: 0%;
+    left: 54%;
+    z-index: 2;
+    opacity: 1;
+}
+
+.item6 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    z-index: 2;
+    opacity: 1;
+    width: 200px;
+}
+
+.loginContent {
+    width: 509px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.loginContent__container {
+    width: 300px;
+    height: 400px;
+    /* background-color: aqua; */
+}
+
+.loginCategory {
+    width: 100%;
+    height: 50px;
+    /* background-color: aquamarine; */
+    display: flex;
+}
+
+.itemLogin {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px #4400ff solid;
+}
+
+.itemRes {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content {
+    width: 100%;
+    height: 100%;
+    /* background-color: #4400ff; */
+}
+
+.account {
+    margin-top: 35px;
+    width: 100%;
+    height: 100px;
+    /* background-color: #4400ff; */
+}
+
+.pE1 {
+    font-size: 14px;
+    color: red;
+    opacity: 0;
+}
+
+.input1 {
+    margin-top: 10px;
+    width: 98%;
+    height: 30px;
+    opacity: 0.8;
+}
+
+.input2 {
+    margin-top: 10px;
+    width: 98%;
+    height: 30px;
+    opacity: 0.8;
+}
+
+.pE1 {
+    margin-top: 5px;
+}
+    
+.pass {
+    margin-top: 0px;
+    width: 100%;
+    height: 100px;
+    /* background-color: #4400ff; */
+    position: relative;
+}
+
+.pE2 {
+    color: red;
+    font-size: 14px;
+    opacity: 0;
+}
+
+.mat {
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    top: 32px;
+    left: 270px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    /* display: none; */
+}
+
+.mat:hover {
+    background-color: bisque;
+}
+
+.mat img {
+    /* margin-top: 2px; */
+}
+
+.pE2 {
+    margin-top: 5px;
+}
+.checkBox {
+    width: 20px;
+    height: 20px;
+    background-color: #00b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.checkBox img {
+    color: #fff;
+}
+.remember {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    /* background-color: aqua; */
+    margin-top: 5px;
+}
+
+.remember p {
+    margin-top: 1px;
+    font-size: 14px;
+    opacity: 0.9;
+    margin-left: 10px;
+}
+
+.loggin {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.btnLogin {
+    width: 100%;
+    height: 100%;
+    background-color: #00b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.active {
+    opacity: 1;
+}

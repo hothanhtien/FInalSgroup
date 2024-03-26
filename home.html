@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="FormCreate">
+            <div class="FromCreateMain">
+                <p>Add new todo</p>
+                <input class="categoryValue " type="text" placeholder="Category">
+                <input class="titleValue " type="text" placeholder="Title">
+                <textarea class="contentValue " name="" id="" cols="30" rows="10" placeholder="Content"></textarea>
+                <div onclick="onCreate()" class="submitCreate"> 
+                    Submit
+                </div>
+            </div>
+        </div>
+        <div class="FormEdit">
+            <div class="FromEditMain">
+                <p>Edit</p>
+                <input class="categoryValueEdit " type="text" placeholder="Category">
+                <input class="titleValueEdit " type="text" placeholder="Title">
+                <textarea class="contentValueEdit " name="" id="" cols="30" rows="10" placeholder="Content"></textarea>
+                <div class="checkboxContainer">
+                    <div class="checkBoxItem ">
+                        <input type="checkbox" class="checkBoxTodo ch">
+                        <label class="lable" for="chTodo">Todo</label>
+                    </div>
+                    <div class="checkBoxItem">
+                        <input type="checkbox" class="checkBoxDoing ch ">
+                        <label class="lable" for="chTodo">Doing</label>
+                    </div>
+                    <div class="checkBoxItem ">
+                        <input type="checkbox" class="checkBoxCompleted ch">
+                        <label class="lable" for="chTodo">Completed</label>
+                    </div>
+                    <div class="checkBoxItem ">
+                        <input type="checkbox" class="checkBoxBlocked ch">
+                        <label class="lable" for="chTodo">Blocked</label>
+                    </div>
+                </div>
+                <div class="submitEdit"> 
+                    Submit
+                </div>
+            </div>
+        </div>
+        <div class="containerItem">
+            <div class="header">
+                <div class="logo">
+                    <img src="./assets/img/Frame 101373.png" alt="">
+                </div>
+                <div class="newTask">
+                    + New task
+                </div>
+            </div>
+            <div class="content">
+                <div class="contentItem todo">
+                    <div class="headerContentItem i1">
+                        <div class="titleItem">Todo</div>
+                        <div class="CountItem">
+                            <div class="Count i11">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerItemDetial containerItemDetialTodo">
+                        <!-- <div class="ItemDetial">
+                            <div class="ContainerItemDetial">
+                                <div class="ItemDetial1">
+                                    <div class="TitleItem">
+                                        <div class="TitleHead">MarKeting</div>
+                                        <p>Write SEO article for new product</p>
+                                    </div>
+                                    <div class="Action">
+                                        <img class="editt" src="./assets/icon/edit.svg" alt="">
+                                        <img class="deletee" src="./assets/icon/delete.svg" alt="">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div class="ItemDetial2">
+                                    <div class="DesItem">
+                                        <p class="pDes">This is an existenial moment for effextive altruism and the rationalist
+                                            comminity writ-large.
+                                        </p>
+                                    </div>
+                                    <div class="Time">
+                                        <div class="imgWatch"><img src="./assets/icon/watch.svg" alt=""></div>
+                                        <div class="TimeCreate">June 30, 2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ItemDetial">
+                            <div class="ContainerItemDetial">
+                                <div class="ItemDetial1">
+                                    <div class="TitleItem">
+                                        <div class="TitleHead">MarKeting</div>
+                                        <p>Write SEO article for new product</p>
+                                    </div>
+                                    <div class="Action">
+                                        <img class="editt" src="./assets/icon/edit.svg" alt="">
+                                        <img class="deletee" src="./assets/icon/delete.svg" alt="">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div class="ItemDetial2">
+                                    <div class="DesItem">
+                                        <p class="pDes">This is an existenial moment for effextive altruism and the rationalist
+                                            comminity writ-large.
+                                        </p>
+                                    </div>
+                                    <div class="Time">
+                                        <div class="imgWatch"><img src="./assets/icon/watch.svg" alt=""></div>
+                                        <div class="TimeCreate">June 30, 2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ItemDetial">
+                            <div class="ContainerItemDetial">
+                                <div class="ItemDetial1">
+                                    <div class="TitleItem">
+                                        <div class="TitleHead">MarKeting</div>
+                                        <p>Write SEO article for new product</p>
+                                    </div>
+                                    <div class="Action">
+                                        <img class="editt" src="./assets/icon/edit.svg" alt="">
+                                        <img class="deletee" src="./assets/icon/delete.svg" alt="">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div class="ItemDetial2">
+                                    <div class="DesItem">
+                                        <p class="pDes">This is an existenial moment for effextive altruism and the rationalist
+                                            comminity writ-large.
+                                        </p>
+                                    </div>
+                                    <div class="Time">
+                                        <div class="imgWatch"><img src="./assets/icon/watch.svg" alt=""></div>
+                                        <div class="TimeCreate">June 30, 2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ItemDetial">
+                            <div class="ContainerItemDetial">
+                                <div class="ItemDetial1">
+                                    <div class="TitleItem">
+                                        <div class="TitleHead">MarKeting</div>
+                                        <p>Write SEO article for new product</p>
+                                    </div>
+                                    <div class="Action">
+                                        <img class="editt" src="./assets/icon/edit.svg" alt="">
+                                        <img class="deletee" src="./assets/icon/delete.svg" alt="">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div class="ItemDetial2">
+                                    <div class="DesItem">
+                                        <p class="pDes">This is an existenial moment for effextive altruism and the rationalist
+                                            comminity writ-large.
+                                        </p>
+                                    </div>
+                                    <div class="Time">
+                                        <div class="imgWatch"><img src="./assets/icon/watch.svg" alt=""></div>
+                                        <div class="TimeCreate">June 30, 2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="contentItem doing">
+                    <div class="headerContentItem i2">
+                        <div class="titleItem">Doing</div>
+                        <div class="CountItem">
+                            <div class="Count i22">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerItemDetial containerItemDetialDoing">
+                        <div class="ItemDetial">
+                            <div class="ContainerItemDetial">
+                                <div class="ItemDetial1">
+                                    <div class="TitleItem">
+                                        <div class="TitleHead">MarKeting</div>
+                                        <p>Write SEO article for new product</p>
+                                    </div>
+                                    <div class="Action">
+                                        <img class="editt" src="./assets/icon/edit.svg" alt="">
+                                        <img class="deletee" src="./assets/icon/delete.svg" alt="">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div class="ItemDetial2">
+                                    <div class="DesItem">
+                                        <p class="pDes">This is an existenial moment for effextive altruism and the rationalist
+                                            comminity writ-large.
+                                        </p>
+                                    </div>
+                                    <div class="Time">
+                                        <div class="imgWatch"><img src="./assets/icon/watch.svg" alt=""></div>
+                                        <div class="TimeCreate">June 30, 2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ItemDetial">
+                            <div class="ContainerItemDetial">
+                                <div class="ItemDetial1">
+                                    <div class="TitleItem">
+                                        <div class="TitleHead">MarKeting</div>
+                                        <p>Write SEO article for new product</p>
+                                    </div>
+                                    <div class="Action">
+                                        <img class="editt" src="./assets/icon/edit.svg" alt="">
+                                        <img class="deletee" src="./assets/icon/delete.svg" alt="">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div class="ItemDetial2">
+                                    <div class="DesItem">
+                                        <p class="pDes">This is an existenial moment for effextive altruism and the rationalist
+                                            comminity writ-large.
+                                        </p>
+                                    </div>
+                                    <div class="Time">
+                                        <div class="imgWatch"><img src="./assets/icon/watch.svg" alt=""></div>
+                                        <div class="TimeCreate">June 30, 2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ItemDetial">
+                            <div class="ContainerItemDetial">
+                                <div class="ItemDetial1">
+                                    <div class="TitleItem">
+                                        <div class="TitleHead">MarKeting</div>
+                                        <p>Write SEO article for new product</p>
+                                    </div>
+                                    <div class="Action">
+                                        <img class="editt" src="./assets/icon/edit.svg" alt="">
+                                        <img class="deletee" src="./assets/icon/delete.svg" alt="">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div class="ItemDetial2">
+                                    <div class="DesItem">
+                                        <p class="pDes">This is an existenial moment for effextive altruism and the rationalist
+                                            comminity writ-large.
+                                        </p>
+                                    </div>
+                                    <div class="Time">
+                                        <div class="imgWatch"><img src="./assets/icon/watch.svg" alt=""></div>
+                                        <div class="TimeCreate">June 30, 2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentItem completed">
+                    <div class="headerContentItem i3">
+                        <div class="titleItem">Completed</div>
+                        <div class="CountItem">
+                            <div class="Count i33">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerItemDetial containerItemDetialCompleted">
+                        <div class="ItemDetial">
+                            <div class="ContainerItemDetial">
+                                <div class="ItemDetial1">
+                                    <div class="TitleItem">
+                                        <div class="TitleHead">MarKeting</div>
+                                        <p>Write SEO article for new product</p>
+                                    </div>
+                                    <div class="Action">
+                                        <img class="editt" src="./assets/icon/edit.svg" alt="">
+                                        <img class="deletee" src="./assets/icon/delete.svg" alt="">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div class="ItemDetial2">
+                                    <div class="DesItem">
+                                        <p class="pDes">This is an existenial moment for effextive altruism and the rationalist
+                                            comminity writ-large.
+                                        </p>
+                                    </div>
+                                    <div class="Time">
+                                        <div class="imgWatch"><img src="./assets/icon/watch.svg" alt=""></div>
+                                        <div class="TimeCreate">June 30, 2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ItemDetial">
+                            <div class="ContainerItemDetial">
+                                <div class="ItemDetial1">
+                                    <div class="TitleItem">
+                                        <div class="TitleHead">MarKeting</div>
+                                        <p>Write SEO article for new product</p>
+                                    </div>
+                                    <div class="Action">
+                                        <img class="editt" src="./assets/icon/edit.svg" alt="">
+                                        <img class="deletee" src="./assets/icon/delete.svg" alt="">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div class="ItemDetial2">
+                                    <div class="DesItem">
+                                        <p class="pDes">This is an existenial moment for effextive altruism and the rationalist
+                                            comminity writ-large.
+                                        </p>
+                                    </div>
+                                    <div class="Time">
+                                        <div class="imgWatch"><img src="./assets/icon/watch.svg" alt=""></div>
+                                        <div class="TimeCreate">June 30, 2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ItemDetial">
+                            <div class="ContainerItemDetial">
+                                <div class="ItemDetial1">
+                                    <div class="TitleItem">
+                                        <div class="TitleHead">MarKeting</div>
+                                        <p>Write SEO article for new product</p>
+                                    </div>
+                                    <div class="Action">
+                                        <img class="editt" src="./assets/icon/edit.svg" alt="">
+                                        <img class="deletee" src="./assets/icon/delete.svg" alt="">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div class="ItemDetial2">
+                                    <div class="DesItem">
+                                        <p class="pDes">This is an existenial moment for effextive altruism and the rationalist
+                                            comminity writ-large.
+                                        </p>
+                                    </div>
+                                    <div class="Time">
+                                        <div class="imgWatch"><img src="./assets/icon/watch.svg" alt=""></div>
+                                        <div class="TimeCreate">June 30, 2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentItem blocked">
+                    <div class="headerContentItem i4">
+                        <div class="titleItem">Blocked</div>
+                        <div class="CountItem">
+                            <div class="Count i44">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerItemDetial containerItemDetialBlocked">
+                        <div class="ItemDetial">
+                            <div class="ContainerItemDetial">
+                                <div class="ItemDetial1">
+                                    <div class="TitleItem">
+                                        <div class="TitleHead">MarKeting</div>
+                                        <p>Write SEO article for new product</p>
+                                    </div>
+                                    <div class="Action">
+                                        <img class="editt" src="./assets/icon/edit.svg" alt="">
+                                        <img class="deletee" src="./assets/icon/delete.svg" alt="">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div class="ItemDetial2">
+                                    <div class="DesItem">
+                                        <p class="pDes">This is an existenial moment for effextive altruism and the rationalist
+                                            comminity writ-large.
+                                        </p>
+                                    </div>
+                                    <div class="Time">
+                                        <div class="imgWatch"><img src="./assets/icon/watch.svg" alt=""></div>
+                                        <div class="TimeCreate">June 30, 2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ItemDetial">
+                            <div class="ContainerItemDetial">
+                                <div class="ItemDetial1">
+                                    <div class="TitleItem">
+                                        <div class="TitleHead">MarKeting</div>
+                                        <p>Write SEO article for new product</p>
+                                    </div>
+                                    <div class="Action">
+                                        <img class="editt" src="./assets/icon/edit.svg" alt="">
+                                        <img class="deletee" src="./assets/icon/delete.svg" alt="">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div class="ItemDetial2">
+                                    <div class="DesItem">
+                                        <p class="pDes">This is an existenial moment for effextive altruism and the rationalist
+                                            comminity writ-large.
+                                        </p>
+                                    </div>
+                                    <div class="Time">
+                                        <div class="imgWatch"><img src="./assets/icon/watch.svg" alt=""></div>
+                                        <div class="TimeCreate">June 30, 2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ItemDetial">
+                            <div class="ContainerItemDetial">
+                                <div class="ItemDetial1">
+                                    <div class="TitleItem">
+                                        <div class="TitleHead">MarKeting</div>
+                                        <p>Write SEO article for new product</p>
+                                    </div>
+                                    <div class="Action">
+                                        <img class="editt" src="./assets/icon/edit.svg" alt="">
+                                        <img class="deletee" src="./assets/icon/delete.svg" alt="">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div class="ItemDetial2">
+                                    <div class="DesItem">
+                                        <p class="pDes">This is an existenial moment for effextive altruism and the rationalist
+                                            comminity writ-large.
+                                        </p>
+                                    </div>
+                                    <div class="Time">
+                                        <div class="imgWatch"><img src="./assets/icon/watch.svg" alt=""></div>
+                                        <div class="TimeCreate">June 30, 2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./main1.js"></script>
+</html>
