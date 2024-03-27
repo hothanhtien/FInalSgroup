@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 })
                 .catch(error => {
-                    // Xử lý lỗi từ máy chủ hoặc lỗi mạng
+                    // Xử lý lỗi từ máy chủ
                     console.error('Error:', error);
                 });
         }
