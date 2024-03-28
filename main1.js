@@ -1,35 +1,18 @@
 // script create Task
 
 var todos = [
-    {
-        category: "Makerting",
-        title: "ok em yêu nhé",
-        content: "nội dung này hãy ghi ra cho vui vui ok"
-    }
+   
 ]
 
 var doings = [
-    {
-        category: "Makerting",
-        title: "ok em yêu nhé",
-        content: "nội dung này hãy ghi ra cho vui vui ok"
-    }
+   
 ]
 
 var completeds = [
-    {
-        category: "Makerting",
-        title: "ok em yêu nhé",
-        content: "nội dung này hãy ghi ra cho vui vui ok"
-    }
+
 ]
 
 var blocked = [
-    {
-        category: "Makerting",
-        title: "ok em yêu nhé",
-        content: "nội dung này hãy ghi ra cho vui vui ok"
-    }
 ]
 
 
@@ -245,8 +228,6 @@ function onCreate() {
 
 var formEdit = document.querySelector('.FormEdit');
 var formEditMain = document.querySelector('.FromEditMain');
-var editBtn = document.querySelector('.submitEdit');
-console.log(editBtn)
 
 
 var categoryValueEdit = document.querySelector('.categoryValueEdit')
@@ -304,7 +285,7 @@ var submitEdit = document.querySelector('.submitEdit')
 
 var checkSubmitEdit = false;
 
-var checkBoxTemp = null;
+var checkBoxTemp = document.querySelector('.checkBoxTodo');
 
 document.querySelectorAll('.ch').forEach(function (item) {
     item.addEventListener('click', function () {
@@ -321,7 +302,6 @@ submitEdit.addEventListener('click', function () {
     array[idd].category = categoryValueEdit.value;
     array[idd].title = titleValueEdit.value;
     array[idd].content = contentValueEdit.value;
-
     var itemAdd = array[idd];
     console.log(itemAdd)
     array.splice(idd, 1);
@@ -370,6 +350,7 @@ submitEdit.addEventListener('click', function () {
     localStorage.setItem('doings', JSON.stringify(doings));
     localStorage.setItem('completeds', JSON.stringify(completeds));
     localStorage.setItem('blocked', JSON.stringify(blocked));
+  
     // localStorage.setItem(type, JSON.stringify(array)); 
     formEdit.classList.toggle('active')
 
