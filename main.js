@@ -79,6 +79,11 @@ mat.addEventListener('click', () => {
     console.log(check)
 })
 
+var checkbox = document.querySelector('.checkBox');
+console.log(checkbox)
+checkbox.addEventListener('click', function() {
+    checkbox.classList.toggle('activeCheck')
+})
 
 
 
