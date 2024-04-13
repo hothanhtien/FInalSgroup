@@ -494,7 +494,7 @@ submitEdit.addEventListener('click', function () {
         categoryValueEdit.classList.remove('error');
         categoryValueEdit.classList.add('success');
     }
-    if (titleValueE == '') {
+    if (titleValueE == '') { 
         check = false;
         titleValueEdit.classList.remove('success');
         titleValueEdit.classList.add('error')
@@ -555,12 +555,11 @@ submitEdit.addEventListener('click', function () {
         checkBoxDoing.checked = false;
         checkBoxCompleted.checked = false;
         checkBoxBlocked.checked = false;
-        // render()
+        // render() 
     }
 
     if (checkBoxCompleted.checked) {
         // console.log('3')
-
         completeds.push(itemAdd)
         localStorage.setItem('completeds', JSON.stringify(completeds));
         checkBoxTodo.checked = false;
@@ -571,7 +570,6 @@ submitEdit.addEventListener('click', function () {
     }
     if (checkBoxBlocked.checked) {
         // console.log('4')
-
         blocked.push(itemAdd)
         localStorage.setItem('blocked', JSON.stringify(blocked));
         checkBoxTodo.checked = false;
@@ -628,7 +626,7 @@ function onDelete(id, type) {
 
 
 
-render();
+render(); 
 
 
 // // kéo thả

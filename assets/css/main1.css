@@ -297,13 +297,14 @@ input {
 .FromCreateMain {
     padding: 10px;
     border-radius: 8px;
-    width: 400px;
+    width: 550px;
     height: fit-content;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    padding-bottom: 30px;
 }
 
 .Dele {
